@@ -1,0 +1,24 @@
+{
+  "name": "audio-message-function",
+  "version": "1.0.0",
+  "description": "Netlify function for audio contact messaging",
+  "main": "audio-message.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "netlify",
+    "serverless",
+    "typescript"
+  ],
+  "author": "Thomas Derflinger",
+  "license": "MIT",
+  "dependencies": {
+    "@netlify/functions": "^0.7.2",
+    "@sendgrid/mail": "^7.4.7",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.6"
+  }
+}
