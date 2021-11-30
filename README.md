@@ -46,7 +46,7 @@ on your local machine.
 netlify dev
 ```
 
-Run from base directory
+Run from base directory.
 
 ## Deploy
 
