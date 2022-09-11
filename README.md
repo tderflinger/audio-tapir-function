@@ -28,7 +28,7 @@ website owner.
 ```bash
 cd netlify/functions/audio-message
 npm i
-````
+```
 
 or
 ```bash
@@ -67,6 +67,22 @@ and EMAIL_FROM, the email address that appears as the sender.
 
 When you deploy the function, these environment variables need to
 be added manually in the Netlify function dashboard.
+
+You find the environment variables section under `Site setting` -> `Build & Deploy` -> `Environment`.
+
+## Decode Attachment
+
+In order to listen to the message once the email arrives, you need to BASE64 decode the attachment file.
+
+For example, run the following command on Linux:
+
+```bash
+base64 -d audio-message.wav >audio-message-dec.wav
+```
+
+## References
+
+Thanks for the article by Jabali Ndungu on `dev.to` regarding ["Handling CORS with Netlify POST Requests"](https://dev.to/weaponxii/handling-cors-with-netlify-post-requests-39ld).
 
 ## License
 
